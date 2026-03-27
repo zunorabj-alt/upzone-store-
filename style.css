@@ -1,0 +1,112 @@
+body {
+  margin:0;
+  font-family: Arial;
+  background: radial-gradient(circle at top, #1a0000, #000000);
+  color:white;
+  text-align:center;
+}
+
+.container {
+  max-width:500px;
+  margin:auto;
+  padding:10px;
+}
+
+h1 {
+  color:#ff3c3c;
+  text-shadow:0 0 10px red;
+}
+
+.tabs button {
+  padding:10px;
+  margin:5px;
+  border:none;
+  border-radius:10px;
+  background:#1a0000;
+  color:#ff4d4d;
+  border:1px solid red;
+  cursor:pointer;
+  transition:0.2s;
+}
+
+.tabs .active {
+  background:red;
+  color:white;
+}
+
+.grid {
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:10px;
+}
+
+.card {
+  background:#1a0000;
+  padding:10px;
+  border-radius:15px;
+  border:1px solid red;
+  cursor:pointer;
+  transition:0.2s;
+}
+
+.card span {
+  display:block;
+  color:#00ff88;
+}
+
+/* 🔥 FIX + PRO TOUCH */
+.card:active{
+  transform:scale(0.97);
+  background:#2a0000;
+}
+
+.card:hover{
+  box-shadow:0 0 10px red;
+}
+
+.form {
+  margin-top:20px;
+  background:#0a0000;
+  padding:15px;
+  border-radius:15px;
+  border:1px solid red;
+  animation:fadeIn 0.3s ease-in-out;
+}
+
+input, select {
+  width:90%;
+  padding:10px;
+  border-radius:10px;
+  border:none;
+  margin:5px 0;
+}
+
+button {
+  padding:10px;
+  background:red;
+  border:none;
+  border-radius:10px;
+  color:white;
+  cursor:pointer;
+  transition:0.2s;
+}
+
+button:hover{
+  opacity:0.85;
+}
+
+.hidden {
+  display:none;
+}
+
+/* 🔥 ANIMATION FORM */
+@keyframes fadeIn{
+  from{opacity:0; transform:translateY(15px);}
+  to{opacity:1; transform:translateY(0);}
+}
+
+@media (max-width:400px){
+  .grid {
+    grid-template-columns:1fr;
+  }
+  }
