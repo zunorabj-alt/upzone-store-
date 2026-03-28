@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Up Zone Store</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🛒 Up Zone Store 💯</h1>
+
+<div class="tabs">
+  <button id="btn-ff" class="active" onclick="showTab('ff')">🔥 Free Fire</button>
+  <button id="btn-pubg" onclick="showTab('pubg')">🎯 PUBG</button>
+</div>
+
+<!-- FREE FIRE -->
+<div id="ff" class="content">
+
+<h2>🔥 Free Fire</h2>
+
+<div class="grid">
+<div class="card" onclick="openOrder('110💎 - 4 800 Ar')">110💎 <span>4 800 Ar</span></div>
+<div class="card" onclick="openOrder('231💎 - 9 300 Ar')">231💎 <span>9 300 Ar</span></div>
+<div class="card" onclick="openOrder('341💎 - 13 900 Ar')">341💎 <span>13 900 Ar</span></div>
+<div class="card" onclick="openOrder('462💎 - 18 500 Ar')">462💎 <span>18 500 Ar</span></div>
+<div class="card" onclick="openOrder('583💎 - 23 100 Ar')">583💎 <span>23 100 Ar</span></div>
+<div class="card" onclick="openOrder('693💎 - 27 900 Ar')">693💎 <span>27 900 Ar</span></div>
+<div class="card" onclick="openOrder('803💎 - 32 600 Ar')">803💎 <span>32 600 Ar</span></div>
+<div class="card" onclick="openOrder('924💎 - 37 100 Ar')">924💎 <span>37 100 Ar</span></div>
+</div>
+
+</div>
+
+<!-- PUBG -->
+<div id="pubg" class="content hidden">
+
+<h2>🎯 PUBG UC</h2>
+
+<div class="grid">
+<div class="card" onclick="openOrder('30 UC - 3 000 Ar')">30 UC <span>3 000 Ar</span></div>
+<div class="card" onclick="openOrder('60 UC - 4 700 Ar')">60 UC <span>4 700 Ar</span></div>
+<div class="card" onclick="openOrder('120 UC - 9 400 Ar')">120 UC <span>9 400 Ar</span></div>
+<div class="card" onclick="openOrder('240 UC - 18 000 Ar')">240 UC <span>18 000 Ar</span></div>
+</div>
+
+</div>
+
+</div>
+
+<!-- POPUP MODAL -->
+<div id="overlay" class="overlay hidden"></div>
+
+<div id="formBox" class="modal hidden">
+
+<span class="close" onclick="closeOrder()">✖</span>
+
+<h2>💳 Commande</h2>
+
+<p id="selectedPack"></p>
+
+<input id="uid" placeholder="UID"><br><br>
+
+<select id="method">
+<option>Orange Money</option>
+<option>MVola</option>
+</select><br><br>
+
+<input id="ref" placeholder="Référence paiement"><br><br>
+
+<button onclick="sendOrder()">Envoyer WhatsApp</button>
+
+<p id="msg"></p>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
