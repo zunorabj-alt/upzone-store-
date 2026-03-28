@@ -6,15 +6,9 @@ color:white;
 text-align:center;
 }
 
-.container{
-max-width:500px;
-margin:auto;
-padding:10px;
-}
+.container{max-width:500px;margin:auto;padding:10px;}
 
-h1{
-color:#ff2b2b;
-}
+h1{color:#ff2b2b;}
 
 .tabs button{
 padding:10px;
@@ -22,13 +16,11 @@ margin:5px;
 border:none;
 border-radius:10px;
 background:#111;
-color:#fff;
+color:white;
 border:1px solid red;
 }
 
-.tabs .active{
-background:red;
-}
+.tabs .active{background:red;}
 
 .grid{
 display:grid;
@@ -44,30 +36,21 @@ border:1px solid red;
 cursor:pointer;
 }
 
-.card span{
-display:block;
-color:#00ff99;
-}
+.card span{color:#00ff99;display:block;}
 
-.hidden{
-display:none;
-}
+.hidden{display:none;}
 
-/* POPUP */
+/* popup */
 .overlay{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-height:100%;
+position:fixed;top:0;left:0;
+width:100%;height:100%;
 background:rgba(0,0,0,0.7);
 z-index:10;
 }
 
 .modal{
 position:fixed;
-top:50%;
-left:50%;
+top:50%;left:50%;
 transform:translate(-50%,-50%);
 background:#111;
 padding:15px;
@@ -96,8 +79,4 @@ color:white;
 border-radius:8px;
 }
 
-.close{
-float:right;
-cursor:pointer;
-font-size:20px;
-}
+.close{float:right;cursor:pointer;font-size:20px;}
