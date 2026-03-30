@@ -84,6 +84,8 @@
 
 </div>
 
+</div>
+
 <!-- POPUP -->
 <div id="overlay" class="overlay hidden"></div>
 
@@ -95,14 +97,15 @@
 
 <p id="selectedPack"></p>
 
-<input id="uid" placeholder="UID"><br><br>
+<input id="uid" placeholder="UID Joueur">
 
-<select id="method">
-<option>Orange Money</option>
-<option>MVola</option>
-</select><br><br>
+<select id="method" onchange="updatePaymentInfo()">
+<option value="">-- Choisir méthode --</option>
+<option value="orange">Orange Money</option>
+<option value="mvola">MVola</option>
+</select>
 
-<input id="ref" placeholder="Référence paiement"><br><br>
+<input id="ref" placeholder="Référence paiement">
 
 <button onclick="sendOrder()">Envoyer WhatsApp</button>
 
@@ -111,5 +114,6 @@
 </div>
 
 <script src="script.js"></script>
+
 </body>
   </html>
