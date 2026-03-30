@@ -12,8 +12,8 @@ body{
     background-size:250px auto; /* azonao soloina 200px / 300px araka izay tianao */
 }
 
-/* OPTION: overlay kely mba hampahazava ny logo */
-body::before{
+/* OPTION: overlay kely esorina satria maizina ny texte */
+/* body::before{
     content:"";
     position:fixed;
     top:0;
@@ -22,7 +22,7 @@ body::before{
     height:100%;
     background:rgba(0,0,0,0.4);
     pointer-events:none;
-}
+} */
 
 /* CSS hafa tsy miova */
 .container{
@@ -156,4 +156,4 @@ button:focus,
     float:right;
     cursor:pointer;
     font-size:20px;
-}
+    }
