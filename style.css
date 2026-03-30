@@ -180,3 +180,33 @@ button:focus,
     transform:scale(1.1);
     background:rgba(255,255,255,0.25);
 }
+
+/* ========================= */
+/* WHATSAPP FLOATING ICON */
+/* ========================= */
+
+.wa-float{
+    position:fixed;
+    bottom:75px;
+    right:20px;
+    width:45px;
+    height:45px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:rgba(255,255,255,0.15);
+    border:1px solid rgba(255,255,255,0.3);
+    border-radius:50%;
+    color:#25D366;
+    font-size:22px;
+    text-decoration:none;
+    backdrop-filter: blur(6px);
+    box-shadow:0 0 10px rgba(0,0,0,0.4);
+    transition:0.3s;
+    z-index:1000;
+}
+
+.wa-float:hover{
+    transform:scale(1.1);
+    background:rgba(255,255,255,0.25);
+}
