@@ -10,7 +10,6 @@ body{
     background-repeat:no-repeat;
     background-position:center;
     background-size:250px auto; /* azonao soloina 200px / 300px araka izay tianao */
-
 }
 
 /* OPTION: overlay kely mba hampahazava ny logo */
@@ -138,10 +137,18 @@ button{
     color:white;
     border-radius:8px;
     cursor:pointer;
+    transition:0.2s;
 }
 
 button:hover{
     background:red;
+}
+
+/* 🔹 BUTTON FOCUS - esorina ny bleu, atao mena kely */
+button:focus,
+.tabs button:focus {
+    outline: none;       /* Esorina ny contour bleu */
+    box-shadow: 0 0 6px rgba(255, 0, 0, 0.6); /* glow kely mena */
 }
 
 /* CLOSE */
@@ -149,4 +156,4 @@ button:hover{
     float:right;
     cursor:pointer;
     font-size:20px;
-  }
+}
