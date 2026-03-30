@@ -1,144 +1,152 @@
 body{
-margin:0;
-font-family:Arial;
-color:white;
-text-align:center;
+    margin:0;
+    font-family:Arial;
+    color:white;
+    text-align:center;
 
-/* 🔥 BACKGROUND: logo eo afovoany + pattern + dark overlay */
-background:
-linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.95)),
-url("1774419694094.jpg") center no-repeat,
-url("1774419694094.jpg") repeat;
+    /* BACKGROUND: mainty + logo tokana eo afovoany */
+    background-color:black;
+    background-image:url("1774419694094.jpg");
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:250px auto; /* azonao soloina 200px / 300px araka izay tianao */
 
-background-size:
-auto,
-180px 180px,   /* logo eo afovoany */
-110px 110px;   /* pattern */
-
-background-color:black;
 }
 
+/* OPTION: overlay kely mba hampahazava ny logo */
+body::before{
+    content:"";
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.4);
+    pointer-events:none;
+}
+
+/* CSS hafa tsy miova */
 .container{
-max-width:500px;
-margin:auto;
-padding:10px;
+    max-width:500px;
+    margin:auto;
+    padding:10px;
 }
 
 /* TITLE */
 h1{
-color:#ff2b2b;
-text-shadow:0 0 6px rgba(255,0,0,0.4);
+    color:#ff2b2b;
+    text-shadow:0 0 6px rgba(255,0,0,0.4);
 }
 
 /* 🔘 BUTTONS */
 .tabs button{
-padding:10px;
-margin:5px;
-border:none;
-border-radius:10px;
-background:rgba(255,255,255,0.15);
-color:white;
-border:1px solid rgba(255,255,255,0.25);
-cursor:pointer;
-transition:0.3s;
+    padding:10px;
+    margin:5px;
+    border:none;
+    border-radius:10px;
+    background:rgba(255,255,255,0.15);
+    color:white;
+    border:1px solid rgba(255,255,255,0.25);
+    cursor:pointer;
+    transition:0.3s;
 }
 
 .tabs button:hover{
-background:rgba(255,255,255,0.25);
+    background:rgba(255,255,255,0.25);
 }
 
 .tabs .active{
-background:rgba(255,0,0,0.8);
-border:1px solid red;
+    background:rgba(255,0,0,0.8);
+    border:1px solid red;
 }
 
 /* GRID */
 .grid{
-display:grid;
-grid-template-columns:repeat(2,1fr);
-gap:10px;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:10px;
 }
 
 /* CARD */
 .card{
-background:rgba(0,0,0,0.6);
-padding:10px;
-border-radius:12px;
-border:1px solid red;
-cursor:pointer;
-transition:0.3s;
+    background:rgba(0,0,0,0.6);
+    padding:10px;
+    border-radius:12px;
+    border:1px solid red;
+    cursor:pointer;
+    transition:0.3s;
 }
 
 .card:hover{
-transform:scale(1.02);
-background:rgba(0,0,0,0.75);
+    transform:scale(1.02);
+    background:rgba(0,0,0,0.75);
 }
 
 .card span{
-color:#00ff99;
-display:block;
+    color:#00ff99;
+    display:block;
 }
 
 /* HIDDEN */
 .hidden{
-display:none;
+    display:none;
 }
 
 /* OVERLAY */
 .overlay{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background:rgba(0,0,0,0.7);
-z-index:10;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.7);
+    z-index:10;
 }
 
 /* MODAL */
 .modal{
-position:fixed;
-top:50%;
-left:50%;
-transform:translate(-50%,-50%);
-background:rgba(20,20,20,0.95);
-padding:15px;
-border-radius:12px;
-width:90%;
-max-width:400px;
-z-index:11;
-border:1px solid red;
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    background:rgba(20,20,20,0.95);
+    padding:15px;
+    border-radius:12px;
+    width:90%;
+    max-width:400px;
+    z-index:11;
+    border:1px solid red;
 }
 
 /* INPUTS */
 input,select{
-width:100%;
-padding:10px;
-margin-top:8px;
-border-radius:8px;
-border:none;
-outline:none;
+    width:100%;
+    padding:10px;
+    margin-top:8px;
+    border-radius:8px;
+    border:none;
+    outline:none;
 }
 
 /* MAIN BUTTON */
 button{
-width:100%;
-padding:10px;
-margin-top:10px;
-background:rgba(255,0,0,0.85);
-border:none;
-color:white;
-border-radius:8px;
-cursor:pointer;
+    width:100%;
+    padding:10px;
+    margin-top:10px;
+    background:rgba(255,0,0,0.85);
+    border:none;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
 }
 
 button:hover{
-background:red;
+    background:red;
 }
 
 /* CLOSE */
 .close{
-float:right;
-cursor:pointer;
-font-size:20px;
-}
+    float:right;
+    cursor:pointer;
+    font-size:20px;
+  }
