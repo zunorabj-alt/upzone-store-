@@ -2,39 +2,42 @@ body{
 margin:0;
 font-family:Arial;
 
-/* 🔥 LOGO BACKGROUND + mazava kokoa */
+/* 🔥 BACKGROUND OPTIMISÉ */
 background:
-linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.75)),
+linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)),
 url("1774419694094.jpg");
 
 background-size:cover;
 background-position:center;
-background-attachment:fixed;
+background-attachment:scroll;
 
 color:white;
 text-align:center;
 }
 
-.container{max-width:500px;margin:auto;padding:10px;}
-
-h1{
-color:#ff2b2b;
-text-shadow:0 0 10px rgba(255,0,0,0.6);
+.container{
+max-width:500px;
+margin:auto;
+padding:10px;
 }
 
-/* 🔘 BUTTONS GLASS EFFECT */
+/* TITLE */
+h1{
+color:#ff2b2b;
+text-shadow:0 0 6px rgba(255,0,0,0.4);
+}
+
+/* 🔘 BUTTONS */
 .tabs button{
 padding:10px;
 margin:5px;
 border:none;
 border-radius:10px;
 
-/* transparent white */
 background:rgba(255,255,255,0.15);
 color:white;
 
-border:1px solid rgba(255,255,255,0.3);
-backdrop-filter: blur(6px);
+border:1px solid rgba(255,255,255,0.25);
 cursor:pointer;
 transition:0.3s;
 }
@@ -55,18 +58,18 @@ grid-template-columns:repeat(2,1fr);
 gap:10px;
 }
 
+/* CARD */
 .card{
 background:rgba(0,0,0,0.6);
 padding:10px;
 border-radius:12px;
 border:1px solid red;
 cursor:pointer;
-backdrop-filter: blur(4px);
 transition:0.3s;
 }
 
 .card:hover{
-transform:scale(1.03);
+transform:scale(1.02);
 background:rgba(0,0,0,0.75);
 }
 
@@ -75,10 +78,12 @@ color:#00ff99;
 display:block;
 }
 
-/* hidden */
-.hidden{display:none;}
+/* HIDDEN */
+.hidden{
+display:none;
+}
 
-/* overlay popup */
+/* OVERLAY */
 .overlay{
 position:fixed;
 top:0;
@@ -89,6 +94,7 @@ background:rgba(0,0,0,0.7);
 z-index:10;
 }
 
+/* MODAL */
 .modal{
 position:fixed;
 top:50%;
@@ -101,9 +107,9 @@ width:90%;
 max-width:400px;
 z-index:11;
 border:1px solid red;
-backdrop-filter: blur(6px);
 }
 
+/* INPUTS */
 input,select{
 width:100%;
 padding:10px;
@@ -113,6 +119,7 @@ border:none;
 outline:none;
 }
 
+/* MAIN BUTTON */
 button{
 width:100%;
 padding:10px;
@@ -128,6 +135,7 @@ button:hover{
 background:red;
 }
 
+/* CLOSE */
 .close{
 float:right;
 cursor:pointer;
