@@ -4,11 +4,11 @@ font-family:Arial;
 color:white;
 text-align:center;
 
-/* 🔥 BACKGROUND: center logo + pattern + dark overlay */
+/* 🔥 BACKGROUND: logo eo afovoany + pattern + dark overlay */
 background:
 linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.95)),
-url("logo.png") center no-repeat,
-url("logo.png") repeat;
+url("1774419694094.jpg") center no-repeat,
+url("1774419694094.jpg") repeat;
 
 background-size:
 auto,
@@ -141,4 +141,4 @@ background:red;
 float:right;
 cursor:pointer;
 font-size:20px;
-  }
+}
