@@ -1,7 +1,16 @@
 body{
 margin:0;
 font-family:Arial;
-background:#0b0b0b;
+
+/* 🔥 LOGO BACKGROUND */
+background:
+linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.95)),
+url("1774419694094.jpg");
+
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
+
 color:white;
 text-align:center;
 }
@@ -36,21 +45,28 @@ border:1px solid red;
 cursor:pointer;
 }
 
-.card span{color:#00ff99;display:block;}
+.card span{
+color:#00ff99;
+display:block;
+}
 
 .hidden{display:none;}
 
 /* popup */
 .overlay{
-position:fixed;top:0;left:0;
-width:100%;height:100%;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
 background:rgba(0,0,0,0.7);
 z-index:10;
 }
 
 .modal{
 position:fixed;
-top:50%;left:50%;
+top:50%;
+left:50%;
 transform:translate(-50%,-50%);
 background:#111;
 padding:15px;
@@ -79,4 +95,8 @@ color:white;
 border-radius:8px;
 }
 
-.close{float:right;cursor:pointer;font-size:20px;}
+.close{
+float:right;
+cursor:pointer;
+font-size:20px;
+  }
