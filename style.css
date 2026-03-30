@@ -9,22 +9,10 @@ body{
     background-image:url("1774419694094.jpg");
     background-repeat:no-repeat;
     background-position:center;
-    background-size:250px auto; /* azonao soloina 200px / 300px araka izay tianao */
+    background-size:250px auto;
 }
 
-/* OPTION: overlay kely esorina satria maizina ny texte */
-/* body::before{
-    content:"";
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    background:rgba(0,0,0,0.4);
-    pointer-events:none;
-} */
-
-/* CSS hafa tsy miova */
+/* CONTAINER */
 .container{
     max-width:500px;
     margin:auto;
@@ -37,7 +25,7 @@ h1{
     text-shadow:0 0 6px rgba(255,0,0,0.4);
 }
 
-/* 🔘 BUTTONS */
+/* TABS */
 .tabs button{
     padding:10px;
     margin:5px;
@@ -127,7 +115,7 @@ input,select{
     outline:none;
 }
 
-/* MAIN BUTTON */
+/* BUTTON GLOBAL */
 button{
     width:100%;
     padding:10px;
@@ -144,11 +132,11 @@ button:hover{
     background:red;
 }
 
-/* 🔹 BUTTON FOCUS - esorina ny bleu, atao mena kely */
+/* FOCUS */
 button:focus,
 .tabs button:focus {
-    outline: none;       /* Esorina ny contour bleu */
-    box-shadow: 0 0 6px rgba(255, 0, 0, 0.6); /* glow kely mena */
+    outline: none;
+    box-shadow: 0 0 6px rgba(255, 0, 0, 0.6);
 }
 
 /* CLOSE */
@@ -156,4 +144,39 @@ button:focus,
     float:right;
     cursor:pointer;
     font-size:20px;
-    }
+}
+
+/* HIDDEN */
+.hidden{
+    display:none;
+}
+
+/* ========================= */
+/* FACEBOOK FLOATING ICON 👍 */
+/* ========================= */
+
+.fb-float{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    width:45px;
+    height:45px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:rgba(255,255,255,0.15);
+    border:1px solid rgba(255,255,255,0.3);
+    border-radius:50%;
+    color:#1877f2;
+    font-size:22px;
+    text-decoration:none;
+    backdrop-filter: blur(6px);
+    box-shadow:0 0 10px rgba(0,0,0,0.4);
+    transition:0.3s;
+    z-index:1000;
+}
+
+.fb-float:hover{
+    transform:scale(1.1);
+    background:rgba(255,255,255,0.25);
+}
