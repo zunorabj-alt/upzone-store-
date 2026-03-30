@@ -20,7 +20,7 @@ document.getElementById("formBox").classList.remove("hidden");
 document.getElementById("selectedPack").innerText = "🎮 Pack: " + pack;
 
 // reset message
-document.getElementById("msg").innerText = "💳 Safidio ny méthode paiement";
+document.getElementById("msg").innerText = "💳 veuillez choisir votre méthode de paiement";
 }
 
 function closeOrder(){
