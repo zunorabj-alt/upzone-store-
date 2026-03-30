@@ -1,29 +1,21 @@
 body{
 margin:0;
 font-family:Arial;
-
-/* 🔥 BACKGROUND LOGO 4x4 */
-background-color:black;
-background-image:url("logo.png"); /* soloy nom du logo */
-background-repeat:repeat;
-background-size:120px 120px;
-background-position:center;
-
 color:white;
 text-align:center;
-}
 
-/* Overlay maizina mba hampazava logo */
-body::before{
-content:"";
-position:fixed;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background:rgba(0,0,0,0.65);
-pointer-events:none;
-z-index:-1;
+/* 🔥 BACKGROUND: center logo + pattern + dark overlay */
+background:
+linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.95)),
+url("logo.png") center no-repeat,
+url("logo.png") repeat;
+
+background-size:
+auto,
+180px 180px,   /* logo eo afovoany */
+110px 110px;   /* pattern */
+
+background-color:black;
 }
 
 .container{
@@ -149,4 +141,4 @@ background:red;
 float:right;
 cursor:pointer;
 font-size:20px;
-                      }
+  }
