@@ -210,3 +210,42 @@ button:focus,
     transform:scale(1.1);
     background:rgba(255,255,255,0.25);
 }
+
+/* GAME ICON AUTO */
+
+/* FREE FIRE */
+.ff-card::before{
+content:"";
+display:block;
+width:45px;
+height:45px;
+margin:auto;
+margin-bottom:6px;
+background:url("oss-7fb466290162147777f368e9116bdb22.png") no-repeat center;
+background-size:cover;
+border-radius:10px;
+border:1px solid rgba(255,255,255,0.2);
+}
+
+/* PUBG */
+.pubg-card::before{
+content:"";
+display:block;
+width:45px;
+height:45px;
+margin:auto;
+margin-bottom:6px;
+background:url("pubg.png") no-repeat center;
+background-size:cover;
+border-radius:10px;
+border:1px solid rgba(255,255,255,0.2);
+}
+
+/* EFFECT */
+.ff-card:hover::before{
+box-shadow:0 0 10px red;
+}
+
+.pubg-card:hover::before{
+box-shadow:0 0 10px orange;
+}
