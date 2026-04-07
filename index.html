@@ -90,7 +90,43 @@
 
 </div>
 
-<!-- POPUP + ICONS tsy miova -->
+<!-- 🔥 POPUP (ILAY TSY AMPY TALOHA) -->
+
+<div id="overlay" class="overlay hidden"></div>
+
+<div id="formBox" class="modal hidden">
+
+<span class="close" onclick="closeOrder()">✖</span>
+
+<h2>💳 Commande</h2>
+
+<p id="selectedPack"></p>
+
+<input id="uid" placeholder="UID Joueur">
+
+<select id="method" onchange="updatePaymentInfo()">
+<option value="">-- Choisir méthode --</option>
+<option value="orange">Orange Money</option>
+<option value="mvola">MVola</option>
+</select>
+
+<input id="ref" placeholder="Référence paiement">
+
+<button onclick="sendOrder()">Envoyer WhatsApp</button>
+
+<p id="msg"></p>
+
+</div>
+
+<!-- ICONS -->
+<a href="https://facebook.com/profile.php?id=61587395553863" target="_blank" class="fb-float">
+<i class="fa-brands fa-facebook-f"></i>
+</a>
+
+<a href="https://wa.me/261344723083" target="_blank" class="wa-float">
+<i class="fa-brands fa-whatsapp"></i>
+</a>
+
 <script src="script.js"></script>
 
 </body>
