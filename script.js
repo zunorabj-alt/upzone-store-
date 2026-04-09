@@ -1,8 +1,24 @@
 let selectedPack = "";
 let selectedNumbers = [];
 
+/* ========================= */
+/* SELECT GAME (HOME) */
+/* ========================= */
+
+function selectGame(game){
+
+const home = document.getElementById("home");
+if(home) home.style.display = "none";
+
+showTab(game);
+}
+
+/* ========================= */
 /* TAB */
+/* ========================= */
+
 function showTab(tab){
+
 const ff = document.getElementById("ff");
 const pubg = document.getElementById("pubg");
 
@@ -11,16 +27,26 @@ if(!ff || !pubg) return;
 ff.classList.add("hidden");
 pubg.classList.add("hidden");
 
-document.getElementById(tab).classList.remove("hidden");
+const activeTab = document.getElementById(tab);
+if(activeTab) activeTab.classList.remove("hidden");
 
-document.getElementById("btn-ff").classList.remove("active");
-document.getElementById("btn-pubg").classList.remove("active");
+/* bouton active */
+const btnFF = document.getElementById("btn-ff");
+const btnPUBG = document.getElementById("btn-pubg");
 
-document.getElementById("btn-" + tab).classList.add("active");
+if(btnFF) btnFF.classList.remove("active");
+if(btnPUBG) btnPUBG.classList.remove("active");
+
+const activeBtn = document.getElementById("btn-" + tab);
+if(activeBtn) activeBtn.classList.add("active");
 }
 
-/* OPEN */
+/* ========================= */
+/* OPEN ORDER */
+/* ========================= */
+
 function openOrder(pack){
+
 selectedPack = pack;
 
 const overlay = document.getElementById("overlay");
@@ -31,66 +57,83 @@ if(!overlay || !formBox) return;
 overlay.classList.remove("hidden");
 formBox.classList.remove("hidden");
 
-document.getElementById("selectedPack").innerText = "🎮 Pack: " + pack;
+const packText = document.getElementById("selectedPack");
+if(packText) packText.innerText = "🎮 Pack: " + pack;
 
-document.getElementById("msg").innerText =
-"💳 veuillez choisir votre méthode de paiement";
+const msg = document.getElementById("msg");
+if(msg) msg.innerText = "💳 veuillez choisir votre méthode de paiement";
 }
 
+/* ========================= */
 /* CLOSE */
+/* ========================= */
+
 function closeOrder(){
-document.getElementById("overlay").classList.add("hidden");
-document.getElementById("formBox").classList.add("hidden");
+
+const overlay = document.getElementById("overlay");
+const formBox = document.getElementById("formBox");
+
+if(overlay) overlay.classList.add("hidden");
+if(formBox) formBox.classList.add("hidden");
 }
 
+/* ========================= */
 /* PAYMENT */
+/* ========================= */
+
 function updatePaymentInfo(){
 
 let method = document.getElementById("method").value;
+let msg = document.getElementById("msg");
 
 if(method === "orange"){
+
 selectedNumbers = [
 "0329768376 - JEAN FREDERIC",
 "0378138688 - Marthe"
 ];
 
-document.getElementById("msg").innerText =
+msg.innerText =
 "📲 ORANGE MONEY:\n\n" +
 "1️⃣ 0329768376 - JEAN FREDERIC\n" +
 "2️⃣ 0378138688 - Marthe";
 }
 
 else if(method === "mvola"){
+
 selectedNumbers = [
 "0342981576 - Marthe"
 ];
 
-document.getElementById("msg").innerText =
+msg.innerText =
 "📲 MVOLA:\n\n" +
 "1️⃣ 0342981576 - Marthe";
 }
 
 else{
 selectedNumbers = [];
-document.getElementById("msg").innerText = "";
+msg.innerText = "";
 }
 
 }
 
-/* SEND */
+/* ========================= */
+/* SEND ORDER */
+/* ========================= */
+
 function sendOrder(){
 
-let uid = document.getElementById("uid").value;
+let uid = document.getElementById("uid").value.trim();
 let method = document.getElementById("method").value;
-let ref = document.getElementById("ref").value;
+let ref = document.getElementById("ref").value.trim();
+let msg = document.getElementById("msg");
 
 if(uid === "" || ref === "" || selectedNumbers.length === 0){
-document.getElementById("msg").innerText = "❌ Fenoy tsara + safidio méthode";
+msg.innerText = "❌ Fenoy tsara + safidio méthode";
 return;
 }
 
 let number = "261344723083";
-
 let numbersText = selectedNumbers.join("\n");
 
 let message =
@@ -105,4 +148,15 @@ numbersText;
 window.open("https://wa.me/" + number + "?text=" + encodeURIComponent(message), "_blank");
 
 closeOrder();
+}
+
+/* ========================= */
+/* BONUS: CLICK OUTSIDE CLOSE */
+/* ========================= */
+
+window.onclick = function(e){
+const overlay = document.getElementById("overlay");
+if(e.target === overlay){
+closeOrder();
+}
 }
