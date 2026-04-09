@@ -489,3 +489,39 @@ body.light-mode .theme-toggle {
     background: rgba(0,0,0,0.1);
     color: black;
     }
+
+/* TSIPIHINA REHEFA HOVER */
+#ff h3, #pubg h3 {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 8px; /* sisiny arrondi kely */
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+#ff h3:hover, #pubg h3:hover {
+    text-decoration: underline;
+    text-decoration-color: #ff2b2b; /* loko fanampiny ho Free Fire */
+    text-underline-offset: 6px; /* kely miakatra ilay underline */
+}
+
+#pubg h3:hover {
+    text-decoration-color: #ffd700; /* loko ho PUBG (gold) */
+}
+
+/* ENCADRÉ ARRONDI */
+#ff h2, #pubg h2 {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 12px;
+    background: rgba(0,0,0,0.5); /* na ovaina araka ny theme */
+    border: 2px solid red;        /* Free Fire */
+    color: white;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* PUBG kosa */
+#pubg h2 {
+    border: 2px solid #ffd700; /* gold */
+}
