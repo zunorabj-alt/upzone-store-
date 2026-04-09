@@ -91,3 +91,20 @@ function sendOrder(){
     window.open("https://wa.me/" + number + "?text=" + encodeURIComponent(message), "_blank");
     closeOrder();
 }
+
+function toggleTheme(){
+    const body = document.body;
+    const icon = document.getElementById("themeIcon");
+
+    if(body.classList.contains("light-mode")){
+        // miverina amin'ny mode sombre
+        body.classList.remove("light-mode");
+        icon.classList.remove("fa-sun");
+        icon.classList.add("fa-moon");
+    } else {
+        // mandeha amin'ny mode mazava
+        body.classList.add("light-mode");
+        icon.classList.remove("fa-moon");
+        icon.classList.add("fa-sun");
+    }
+}
