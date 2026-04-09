@@ -17,13 +17,28 @@
 
 <h1>🛒 Up Zone Store 💯</h1>
 
+<!-- 🔥 HOME (CHOIX JEU) -->
+<div id="home" class="home">
+
+<div class="game-box" onclick="selectGame('ff')">
+    <img src="oss-7fb466290162147777f368e9116bdb22.png">
+    <p>🔥 Free Fire</p>
+</div>
+
+<div class="game-box" onclick="selectGame('pubg')">
+    <img src="PUBG-Mobile-UC1-2.webp">
+    <p>🎯 PUBG</p>
+</div>
+
+</div>
+
 <div class="tabs">
   <button id="btn-ff" class="active" onclick="showTab('ff')">🔥 Free Fire</button>
   <button id="btn-pubg" onclick="showTab('pubg')">🎯 PUBG</button>
 </div>
 
 <!-- FREE FIRE -->
-<div id="ff" class="content">
+<div id="ff" class="content hidden">
 
 <h2>🔥 Free Fire</h2>
 
@@ -90,8 +105,7 @@
 
 </div>
 
-<!-- 🔥 POPUP (ILAY TSY AMPY TALOHA) -->
-
+<!-- POPUP -->
 <div id="overlay" class="overlay hidden"></div>
 
 <div id="formBox" class="modal hidden">
