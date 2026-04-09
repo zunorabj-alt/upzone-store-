@@ -368,32 +368,6 @@ box-shadow:0 0 10px orange;
     background:rgba(255,255,255,0.2);
 }
 
-/* LIGHT MODE */
-body.light-mode{
-    background-color:white;
-    color:black;
-}
-
-body.light-mode .card{
-    background:rgba(255,255,255,0.85);
-    color:black;
-    border:1px solid #ccc;
-}
-
-body.light-mode h1, body.light-mode h2, body.light-mode h3{
-    color:black;
-}
-
-body.light-mode .tabs button.active{
-    background:orange;
-    border:1px solid orange;
-}
-
-body.light-mode .back-btn{
-    background:rgba(255,255,255,0.7);
-    color:black;
-    border:1px solid #ccc;
-}
 
 /* CARDS TARIFS */
 .card {
