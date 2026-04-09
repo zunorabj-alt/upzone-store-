@@ -249,3 +249,65 @@ box-shadow:0 0 10px red;
 .pubg-card:hover::before{
 box-shadow:0 0 10px orange;
 }
+
+/* ========================= */
+/* HOME GAME SELECT */
+/* ========================= */
+
+.home{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    margin-top:40px;
+    flex-wrap:wrap;
+}
+
+.game-box{
+    width:150px;
+    cursor:pointer;
+    text-align:center;
+    transition:0.3s;
+}
+
+.game-box img{
+    width:100%;
+    height:150px;
+    object-fit:cover;
+    border-radius:20px;
+    border:2px solid rgba(255,255,255,0.2);
+    box-shadow:0 0 10px rgba(0,0,0,0.5);
+}
+
+.game-box p{
+    margin-top:10px;
+    font-weight:bold;
+    font-size:14px;
+}
+
+/* HOVER EFFECT */
+.game-box:hover{
+    transform:scale(1.08);
+}
+
+.game-box:hover img{
+    box-shadow:0 0 15px red;
+}
+
+/* ========================= */
+/* ANIMATION PETIT STYLE */
+/* ========================= */
+
+.home{
+    animation:fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+    }
