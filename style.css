@@ -312,12 +312,9 @@ box-shadow:0 0 10px orange;
     }
     }
 
-/* ========================= */
 /* BOUTON RETOUR */
-/* ========================= */
-
 .back-btn{
-    position:absolute;
+    position:fixed;
     left:15px;
     top:15px;
     background:rgba(0,0,0,0.6);
@@ -327,8 +324,24 @@ box-shadow:0 0 10px orange;
     cursor:pointer;
     border:1px solid rgba(255,255,255,0.2);
     transition:0.3s;
+    z-index:100;
 }
 
 .back-btn:hover{
     background:rgba(255,0,0,0.7);
+}
+
+/* HOME GRID */
+#home{
+    display:flex;
+    gap:15px;
+    justify-content:center;
+    margin-bottom:20px;
+}
+
+#home .card span{
+    display:block;
+    margin-top:6px;
+    color:white;
+    font-weight:bold;
 }
