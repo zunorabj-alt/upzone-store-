@@ -394,3 +394,23 @@ body.light-mode .back-btn{
     color:black;
     border:1px solid #ccc;
 }
+
+/* Title h1 */
+h1{
+    font-family: 'Orbitron', sans-serif; /* exemple techno / gaming */
+}
+
+/* Tabs */
+.tabs button{
+    font-family: 'Roboto', sans-serif; /* simple et moderne */
+}
+
+/* Cards / Tarifs */
+.card{
+    font-family: 'Press Start 2P', cursive; /* style retro / pixel */
+}
+
+/* Modal / Inputs */
+.modal, input, select, button{
+    font-family: 'Poppins', sans-serif;
+}
