@@ -432,8 +432,10 @@ body.light-mode .back-btn{
   border: 1px solid rgba(255,255,255,0.2);
 }
 
-.ff-card::before {
-  background-image: url("oss-7fb466290162147777f368e9116bdb22.png");
+/* FREE FIRE - uniforme style PUBG */
+.ff-card {
+  background: linear-gradient(135deg, rgba(255,120,0,0.9), rgba(0,150,255,0.8));
+  border: 2px solid #ff9900;
 }
 
 .pubg-card::before {
