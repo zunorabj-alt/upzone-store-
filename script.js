@@ -160,3 +160,16 @@ if(e.target === overlay){
 closeOrder();
 }
 }
+
+function goHome(){
+
+// asehoy home
+document.getElementById("home").style.display = "flex";
+
+// afeno contenus
+document.getElementById("ff").classList.add("hidden");
+document.getElementById("pubg").classList.add("hidden");
+
+// afeno bouton retour
+document.getElementById("backBtn").classList.add("hidden");
+   }
